@@ -1,0 +1,40 @@
+@import "../../commonStyles/button.module.scss";
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.btnGrp {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  .btn {
+    &.outlineBtn {
+      @include button(126px, $white-color, $cancel-btn-txt, 16px, 500);
+      height: 40px;
+      &:hover {
+        background: $white-color;
+        color: $cancel-btn-txt;
+      }
+      &:focus {
+        background: $button;
+        color: $cancel-btn-txt;
+      }
+      @include respond(small) {
+        width: 296px;
+        height: 40px;
+      }
+    }
+    &.filledBtn {
+      @include button(282px, $button, $white-color, 16px, bold);
+      height: 40px;
+      &:hover {
+        background: $button;
+        color: $white-color;
+      }
+      &:focus {
+        background: $button;
+        color: $white-color;
+      }
+    }
+  }
+}

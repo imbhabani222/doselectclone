@@ -1,0 +1,38 @@
+[
+  {
+    "question": " Why am I being forced to give an assessment in full-screen mode?",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": "I'm not able to see question and images? What should I do??",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": " I don't understand the problem statement, what should I do??",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": "My code is getting compiled in my local IDE, but throws compilation error when I run it in DoSelect’s IDE??",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": " How can I check my solution in IDE??",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": " How have got “Time Limit Exceeded” error, what should I do??",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": "How can I debug my code? ",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": "After I have submitted an answer to a question, can I come back and change my submission? ",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  },
+  {
+    "question": "My code is passing the sample assessment cases but failing the evaluation assessment cases. What should I do?    ? ",
+    "answer": "This is because an assessment administrator has enabled Secure Mode for the assessment. You would only be ble to give an assessment in full-screen mode. In case you switch tabs or open a new window, your assessment will be flagged to the assessment administrator."
+  }
+]

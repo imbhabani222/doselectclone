@@ -1,0 +1,61 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.container {
+  width: 85%;
+  max-width: 1230px;
+  height: 100%;
+  margin: 15px auto;
+  padding: 10px;
+  background: $white-color;
+  border: 1px solid $border;
+  box-sizing: border-box;
+  font-family: $font-family;
+  box-shadow: 0px 4px 4px $Faq-box-shadow;
+  border-radius: 10px;
+  @include respond(small) {
+    box-shadow: none;
+    border: none;
+  }
+
+  .section1 :global {
+    margin-top: 30px;
+    text-align: center;
+
+    h1 {
+      @include fontSize(20);
+      color: $app-dark-color;
+      font-weight: $font-weight-bold;
+
+      @include respond(medium) {
+        @include fontSize(14);
+      }
+      @include respond(small) {
+        @include fontSize(12);
+        line-height: normal;
+      }
+    }
+
+    .ant-typography {
+      @include fontSize(6);
+      margin: 15px auto;
+      width: 65%;
+
+      @include respond(medium) {
+        @include fontSize(6);
+        width: auto;
+      }
+      @include respond(small) {
+        @include fontSize(4);
+        width: 100%;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+  }
+}

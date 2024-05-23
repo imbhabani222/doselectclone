@@ -1,0 +1,30 @@
+@import "./commonStyles/color.module.scss";
+@import "./commonStyles/font.module.scss";
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scroll-color;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+.container {
+  background: $white-color;
+  .logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow svg {
+  width: 20px;
+  height: 20px;
+}

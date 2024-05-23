@@ -1,0 +1,195 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+.container {
+  font-family: $font-family;
+  width: 85%;
+  max-width: 1230px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: $white-color;
+  border: 1px solid $border;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px $Faq-box-shadow;
+  border-radius: 10px;
+  @include respond(small) {
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    padding: 20px 0px;
+    margin: 20px auto;
+  }
+
+  .section1 :global {
+    text-align: center;
+
+    h2 {
+      @include fontSize(18);
+      color: $dark-blue;
+      font-weight: $font-weight-bold;
+      @include respond(medium) {
+        @include fontSize(15);
+        line-height: normal;
+      }
+      @include respond(small) {
+        @include fontSize(10);
+      }
+    }
+
+    .ant-typography {
+      @include fontSize(6);
+      margin: 18px auto;
+      width: 61%;
+      color: $black-color;
+      @include fontWeight(300);
+      @include respond(medium) {
+        width: 90%;
+        @include fontSize(5);
+      }
+      @include respond(small) {
+        @include fontSize(3);
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-width: 500px;
+      @include respond(medium) {
+        max-width: 100%;
+      }
+      @include respond(small) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .section2 .contentBox :global {
+    margin: 20px auto;
+    max-width: 500px;
+    height: 130px;
+    padding: 10px 30px;
+    background: $white-color;
+    border: 1px solid $dark-border;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    ul {
+      li {
+        margin: 0 20px;
+        @include respond(small) {
+          margin: 0 13px;
+        }
+      }
+      li:first-child {
+        margin-left: 5px;
+      }
+    }
+    @include respond(small) {
+      padding: 10px 21px;
+    }
+  }
+
+  .stars :global {
+    width: 300px;
+    @include respond(small) {
+      width: 245px;
+    }
+
+    .ant-row {
+      margin-top: 4px;
+      color: $dark-grey;
+      justify-content: space-between;
+    }
+
+    .ant-typography {
+      color: $active-navtext-color;
+      @include respond(small) {
+        @include fontSize(3);
+      }
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  textarea:focus {
+    border: 1px solid $dark-border;
+    box-shadow: none;
+  }
+
+  .textBox {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    max-width: 500px;
+
+    h6 {
+      float: left;
+    }
+  }
+  h6 {
+    color: $black-color;
+    @include fontSize(6);
+    @include fontWeight(300);
+    font-weight: $font-weight-bold;
+    line-height: 24px;
+    margin: 10px 0;
+    @include respond(medium) {
+      @include fontSize(5);
+      margin: 2px 0;
+    }
+    @include respond(small) {
+      @include fontSize(4);
+      margin: 2px 0;
+    }
+  }
+
+  h4 {
+    display: flex;
+    flex-direction: row;
+    max-width: 46%;
+    margin: 15px auto 35px auto;
+    max-width: 500px;
+    color: $normal-btn-txt-clr;
+    @include fontSize(6px);
+    @include respond(large) {
+      width: 100%;
+    }
+    @include respond(medium) {
+      max-width: 100%;
+      @include fontSize(6);
+    }
+    @include respond(small) {
+      @include fontSize(4);
+    }
+  }
+  h4:before,
+  h4:after {
+    content: "";
+    flex: 1 1;
+    flex-shrink: 1 1;
+    border-bottom: 2px solid $dark-border;
+    margin: auto;
+  }
+  h4:before {
+    margin-right: 10px;
+  }
+  h4:after {
+    margin-left: 10px;
+  }
+
+  button {
+    width: 193px;
+    height: 40px;
+    color: $white-color;
+    margin-top: 10px;
+    background: $button;
+    border-radius: 40px;
+  }
+  button:hover {
+    color: $white-color;
+    background: $button;
+  }
+}

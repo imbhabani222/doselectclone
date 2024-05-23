@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Please rate your overall assessment experience on DoSelect.",
+    "label1": "Poor",
+    "label2": "Awesome"
+  },
+  {
+    "question": "How easy was it to understand the problems?",
+    "label1": "Very Confusing",
+    "label2": "Very Easy"
+  },
+  {
+    "question": "Would you recommend DoSelect to a friend?.",
+    "label1": "Very Unlikely",
+    "label2": "Of course"
+  }
+]

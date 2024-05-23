@@ -1,0 +1,84 @@
+@import "../.././commonStyles/color.module.scss";
+@import "../.././commonStyles/font.module.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.report_modal :global {
+  .ant-modal-close-x {
+    color: $white-color;
+  }
+  .ant-modal-header {
+    background: $report-btn-color;
+    .ant-modal-title {
+      color: $white-color;
+    }
+  }
+
+  .ant-modal-body :global {
+    text-align: center;
+    .ant-row {
+      .ant-input {
+        width: 85%;
+        height: 100%;
+        border: 1px solid $radiobtn-border-color;
+        border-radius: 5px;
+        color: $black-color;
+        text-align: left;
+        padding: 2%;
+        box-shadow: none;
+      }
+
+      .ant-col {
+        button {
+          width: 200px;
+          height: 40px;
+          background: $button;
+          border: 1px solid $button;
+          color: $white-color;
+          border-radius: 40px;
+          margin: 2%;
+        }
+        .ant-radio-group {
+          width: 100%;
+
+          .ant-space {
+            width: 100%;
+            .ant-space-item {
+              width: 100%;
+              margin: 8px 0;
+              .ant-radio-button-wrapper-checked {
+                background-color: $report-checkbtn-bg-color;
+                box-shadow: none;
+              }
+              .ant-radio-button-wrapper {
+                width: 85%;
+                height: 100%;
+                border: 1px solid $radiobtn-border-color;
+                border-radius: 5px;
+                color: $black-color;
+                text-align: left;
+                padding: 1%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.report_container {
+  .report_btn {
+    background: $report-btn-color;
+    border-radius: 30px;
+    color: $white-color;
+    border: 0;
+  }
+}
+.Inputlabel {
+  text-align: left;
+  margin-left: 8%;
+}

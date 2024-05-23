@@ -1,0 +1,96 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.site_page_header {
+  background-color: $navbar-background;
+  min-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  width: 100vw;
+  transition: all 0.8s ease;
+  position: fixed;
+  z-index: 9;
+  .icon {
+    svg {
+      fill: transparent;
+      width: 20px;
+      height: 13px;
+    }
+    &.poor_network {
+      svg {
+        path {
+          fill: $network-poor;
+        }
+      }
+    }
+    &.no_network {
+      svg {
+        path {
+          fill: $error-clr;
+        }
+      }
+    }
+  }
+  .content_div {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    column-gap: 21px;
+    transition: all 0.8 ease;
+    .helpiconbtn {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      color: $white-color;
+      column-gap: 9px;
+      cursor: pointer;
+      .text {
+        padding: 0;
+        margin: 0;
+        color: inherit;
+        line-height: inherit;
+      }
+    }
+  }
+  .que_label {
+    @include fontSize(6px);
+    line-height: 19px;
+    color: $white-color;
+    margin: 0;
+    padding: 0;
+  }
+  @include respond(Xlarge) {
+  }
+  @include respond(large) {
+  }
+  @include respond(max_mid) {
+  }
+  @include respond(medium) {
+  }
+  @include respond(small) {
+    .icon {
+      svg {
+        width: 16px;
+        height: 13px;
+      }
+    }
+    .que_label {
+      display: none;
+    }
+    .content_div {
+      column-gap: 12px;
+      .helpiconbtn {
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+}
